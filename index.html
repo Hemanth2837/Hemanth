@@ -1032,7 +1032,7 @@ footer {
         <h1 class="hero-h1">
           Building digital<br/>
           <em>experiences</em><br/>
-          that matter.
+          that matter.  
         </h1>
         <p class="hero-p">
           I'm <strong>Hemanth</strong> — an aspiring Full Stack Developer and B.Sc Computer Technology student passionate about crafting clean, functional, and beautiful web applications.
@@ -1043,6 +1043,10 @@ footer {
           </a>
           <a href="#contact" class="btn-secondary">
             Get In Touch <i class="fas fa-paper-plane"></i>
+          </a>
+          <!--Resume Download Button-->
+          <a href="resume.pdf" class="btn-secondary" download>
+            Download Resume <i class="fas fa-download"></i>
           </a>
         </div>
         <div class="hero-stats">
@@ -1060,7 +1064,6 @@ footer {
           </div>
         </div>
       </div>
-
       <div class="hero-image-wrap">
         <div class="hero-img-frame">
           <!-- Replace src with your actual photo -->
@@ -1484,23 +1487,26 @@ footer {
 
       <div class="reveal">
         <div class="contact-form">
+          <form id="contactForm"
+                action="https://formspree.io/f/xykrjedy"
+                method="POST">
           <div class="form-row">
             <div class="form-field">
               <label>First Name</label>
-              <input type="text" placeholder="Jane"/>
+              <input type="text" placeholder="Jane"required/>
             </div>
             <div class="form-field">
               <label>Last Name</label>
-              <input type="text" placeholder="Doe"/>
+              <input type="text" placeholder="Doe"required/>
             </div>
           </div>
           <div class="form-field">
             <label>Email Address</label>
-            <input type="email" placeholder="jane@company.com"/>
+            <input type="email" placeholder="jane@company.com"required/>
           </div>
           <div class="form-field">
             <label>Subject</label>
-            <select>
+            <select name="subject"required>
               <option value="">Select a topic…</option>
               <option>Full-time Opportunity</option>
               <option>Internship</option>
@@ -1511,11 +1517,12 @@ footer {
           </div>
           <div class="form-field">
             <label>Message</label>
-            <textarea placeholder="Tell me about the role or project…"></textarea>
+            <textarea placeholder="Tell me about the role or project…"required></textarea>
           </div>
           <button class="btn-send">
             Send Message <i class="fas fa-paper-plane"></i>
           </button>
+          </form>
         </div>
       </div>
     </div>
