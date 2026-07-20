@@ -1493,16 +1493,27 @@ footer {
           <div class="form-row">
             <div class="form-field">
               <label>First Name</label>
-              <input type="text" name="firstName" placeholder="Jane" required/>
+              <input type="text" name="firstName" placeholder="firstname" required/>
             </div>
             <div class="form-field">
               <label>Last Name</label>
-              <input type="text" name="lastName" placeholder="Doe" required/>
+              <input type="text" name="lastName" placeholder="surename" required/>
             </div>
           </div>
           <div class="form-field">
+            <label>Mobile Number</label>
+            <input
+                 type="tel"
+                 name="phone"
+                 placeholder="98xxxxxxx0"
+                 pattern="[6-9][0-9]{9}"
+                 maxlength="10"
+                 required
+                  />
+           </div>
+          <div class="form-field">
             <label>Email Address</label>
-            <input type="email" name="email" placeholder="jane@company.com" required/>
+            <input type="email" name="email" placeholder="hxxxx@gmail.com" required/>
           </div>
           <div class="form-field">
             <label>Subject</label>
@@ -1517,7 +1528,9 @@ footer {
           </div>
           <div class="form-field">
             <label>Message</label>
-            <textarea name="message" placeholder="Tell me about the role or project…" required></textarea>
+            <textarea name="message" placeholder="Tell me about the role or project…" 
+            maxlength="300"
+            required></textarea>
           </div>
           <button type="submit" class="btn-send">
             Send Message <i class="fas fa-paper-plane"></i>
